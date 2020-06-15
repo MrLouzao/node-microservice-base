@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug from file",
+            "program": "${workspaceFolder}/index.js",
+            "env": {
+                "LOG": "DEBUG",
+                "FILE": "${workspaceFolder}/config/config-file.json"
+            },
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Cloud config",
+            "program": "${workspaceFolder}/index.js",
+            "env": {
+                "LOG": "DEBUG",
+                "CLOUD_CONFIG_URL": "http://cloud-config:8888",
+                "ARTIFACT_ID": "node-ms-base",
+                "APP_PROFILE": "development"
+            },
+            "outputCapture": "std"
+        }
+    ]
+}

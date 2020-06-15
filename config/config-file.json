@@ -1,0 +1,10 @@
+{
+    "propertyOne": "oneValue",
+    "nested": {
+        "property": {
+            "on": {
+                "file": 123
+            }
+        }
+    }
+}
